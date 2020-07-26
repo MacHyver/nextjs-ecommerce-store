@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
@@ -7,28 +8,30 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Rock'n'Stuff</title>
+        <title>Rock'n'Stuff - Impressum</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-
       <main>
-        <h1 className="title">Welcome to Rock'n'Stuff!</h1>
-
-        <p className="description">
-          Your homebase for selfmade skirts and other stuff
+        <h1 className="title">
+          Impressum
+          <br></br>
+        </h1>
+        <h3>
+          Verantwortlich für die Website, so wie <br></br>
+          Konzept/ Design &amp; Programmierung/ Umsetzung:
+        </h3>
+        <p>
+          Mag. Michaela Heyer<br></br>
+          Pernerstorfergasse XX/x/XX <br></br>1100 Wien<br></br> Tel.
+          +43650XXXX321 <br></br>Mail: XXX at hotmail.com <br></br>
+          <br></br>Private Seite <br></br>
+          Stand: 25.07.2020
         </p>
-
-        <div className="grid"></div>
       </main>
-
-      <Footer />
 
       <style jsx>{`
         main {
-          padding: 5rem 0;
-          width: 100%;
-          height: 750px;
           flex: 1;
           display: flex;
           flex-direction: column;
@@ -39,17 +42,25 @@ export default function Home() {
             Helvetica Neue, sans-serif;
         }
         main h1 {
-          font-size: 90px;
+          margin: 50px;
+          font-size: 80px;
           font-style: bold;
+          color: white;
+          letter-spacing: 10px;
+          word-spacing: 20px;
+          text-shadow: 3px 3px #0c0c0cb0;
+        }
+
+        main h3 {
+          font-size: 40px;
           color: white;
           letter-spacing: 5px;
           word-spacing: 20px;
           text-shadow: 3px 3px #0c0c0cb0;
         }
-
         main p {
-          font-size: 70px;
-          word-spacing: 20px;
+          font-size: 40px;
+          word-spacing: 10px;
           color: white;
           letter-spacing: 2px;
           text-shadow: 3px 3px #0c0c0cb0;

@@ -9,31 +9,17 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 className="title">404 Error</h1>
-        <h2>Uuuupsi, page not found!</h2>
+        <h1 className="title">
+          <img
+            src="./404rocked.png"
+            alt="rock fingers 404 page"
+            className="rocked"
+          />
+        </h1>
+        <h2>Uuuupsi, page got rocked!</h2>
       </main>
 
       <style jsx>{`
-        .container {
-          // min-height: 100vh;
-          // display: flex;
-          // flex-direction: column;
-          // justify-content: center;
-          // align-items: center;
-        }
-        .header {
-          border-style: hidden;
-          padding: 30px;
-          background-color: lightblue;
-          text-align: center;
-          word-spacing: 70px;
-          font-family: --apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-          font-size: 25px;
-          font-style: bold;
-          text-shadow: 2px 2px white;
-        }
         main {
           padding: 5rem 0;
           flex: 1;
@@ -41,27 +27,12 @@ export default function Home() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          font-size: 25px;
         }
-
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
-          width: 25px;
-          height: 25px;
-        }
-
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+        main img {
+          margin-left: 15px;
+          width: 400px;
+          height: 400px;
         }
       `}</style>
 
